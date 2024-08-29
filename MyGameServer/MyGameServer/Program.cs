@@ -1,3 +1,5 @@
+using MyGameServer.Socket;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -23,5 +25,8 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
+
+var tcpServer = new TcpSocketServer(9000);
+_ = tcpServer.StartAsync();
 
 app.Run();
