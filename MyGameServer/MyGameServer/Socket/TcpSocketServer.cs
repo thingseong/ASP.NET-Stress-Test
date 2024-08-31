@@ -1,6 +1,8 @@
 ﻿using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Collections.Concurrent;
+using Microsoft.Extensions.Caching.Distributed;
 
 namespace MyGameServer.Socket;
 
@@ -8,10 +10,13 @@ public class TcpSocketServer
 {
     private readonly int _port;
     private TcpListener _listener;
-
-    public TcpSocketServer(int port)
+    // private readonly ConcurrentDictionary<string, byte[]> _cache = new ConcurrentDictionary<string, byte[]>();
+    private readonly IDistributedCache _cache;
+    
+    public TcpSocketServer(int port, IDistributedCache cache)
     {
         _port = port;
+        _cache = cache;
     }
 
     public async Task StartAsync()
@@ -39,12 +44,28 @@ public class TcpSocketServer
             {
                 var request = Encoding.ASCII.GetString(buffer, 0, bytesRead).Trim();
                 Console.WriteLine($"Received {request}");
-                
-                var response = Encoding.ASCII.GetBytes("Echo : " + request);
-                
-                await networkStream.WriteAsync(response, 0, response.Length);
 
+                var cachedResponse = await _cache.GetStringAsync(request);
                 
+                if (!string.IsNullOrEmpty(cachedResponse))
+                {
+                    Console.WriteLine("Cache hit. Returning cached response.");
+                    var cachedResponseBytes = Encoding.ASCII.GetBytes(cachedResponse);
+                    await networkStream.WriteAsync(cachedResponseBytes,  0, cachedResponseBytes.Length);
+                }
+                else{
+                    
+                    for(int i = 0; i < 100000000; i++){}
+                    
+                    var response = Encoding.ASCII.GetBytes("Echo : " + request + '\n');
+                    var cacheReponse ="Cached Echo : " + request +'\n';
+                    
+                    // _cache[request] = cacheReponse;
+                    await _cache.SetStringAsync(request, cacheReponse);
+                    await networkStream.WriteAsync(response, 0, response.Length);
+                }
+
+                //break;
             }
         }
         client.Close();

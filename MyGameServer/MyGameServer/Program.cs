@@ -1,9 +1,18 @@
+using Microsoft.Extensions.Caching.Distributed;
+using Microsoft.Extensions.Caching.Memory;
 using MyGameServer.Socket;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddStackExchangeRedisCache(options =>
+{
+    options.Configuration = builder.Configuration.GetConnectionString("Redis");
+    // options.InstanceName = bu;
+});
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
 
 var app = builder.Build();
 
@@ -26,7 +35,8 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-var tcpServer = new TcpSocketServer(9000);
+var cache = app.Services.GetService<IDistributedCache>();
+var tcpServer = new TcpSocketServer(9000, cache);
 _ = tcpServer.StartAsync();
 
 app.Run();
