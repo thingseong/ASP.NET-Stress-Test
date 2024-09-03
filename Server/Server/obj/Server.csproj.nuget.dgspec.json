@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SSAFY\\RiderProjects\\Server\\Server\\Server.csproj": {}
+    "C:\\Users\\audtj\\OneDrive\\바탕 화면\\Git\\ASP.NET-Stress-Test\\Server\\Server\\Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SSAFY\\RiderProjects\\Server\\Server\\Server.csproj": {
+    "C:\\Users\\audtj\\OneDrive\\바탕 화면\\Git\\ASP.NET-Stress-Test\\Server\\Server\\Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SSAFY\\RiderProjects\\Server\\Server\\Server.csproj",
+        "projectUniqueName": "C:\\Users\\audtj\\OneDrive\\바탕 화면\\Git\\ASP.NET-Stress-Test\\Server\\Server\\Server.csproj",
         "projectName": "Server",
-        "projectPath": "C:\\Users\\SSAFY\\RiderProjects\\Server\\Server\\Server.csproj",
-        "packagesPath": "C:\\Users\\SSAFY\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SSAFY\\RiderProjects\\Server\\Server\\obj\\",
+        "projectPath": "C:\\Users\\audtj\\OneDrive\\바탕 화면\\Git\\ASP.NET-Stress-Test\\Server\\Server\\Server.csproj",
+        "packagesPath": "C:\\Users\\audtj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\audtj\\OneDrive\\바탕 화면\\Git\\ASP.NET-Stress-Test\\Server\\Server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\SSAFY\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\audtj\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -58,7 +58,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Users\\SSAFY\\.dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
