@@ -36,6 +36,11 @@ while (true)
     }
 }
 
+class Packet
+{
+    public ushort size;
+    public ushort packetId;
+}
 
 
 class GameSession : Session 
@@ -43,19 +48,28 @@ class GameSession : Session
     public override void OnConnected(EndPoint endpoint)
     {
         Console.WriteLine("OnConnected");
-
+        Packet packet = new Packet() { size = 4, packetId = 7 };
+        
         for (int i = 0; i < 5; i++)
         {
-            byte[] data = Encoding.UTF8.GetBytes($"Hello, World! {i}");
-            Send(data);
+            ArraySegment<byte> openSegment = SendBufferHelper.Open(4096);
+            byte[] buffer = BitConverter.GetBytes(packet.size);
+            byte[] buffer2 = BitConverter.GetBytes(packet.packetId);
+            Array.Copy(buffer, 0 , openSegment.Array, openSegment.Offset, buffer.Length);
+            Array.Copy(buffer2, 0 , openSegment.Array, openSegment.Offset + buffer.Length, buffer2.Length);
+        
+            ArraySegment<byte> sendBuff =SendBufferHelper.Close(packet.size);
+        
+            Send(sendBuff);
         }
         
     }
 
-    public override void OnRecv(ArraySegment<byte> data)
+    public override int OnRecv(ArraySegment<byte> data)
     {
         string recvData = Encoding.UTF8.GetString(data.Array, data.Offset, data.Count);
         Console.WriteLine("[From Server]" + recvData);
+        return data.Count;
     }
 
     public override void OnSend(int numOfBytes)
