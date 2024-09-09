@@ -13,7 +13,7 @@ builder.Services.AddStackExchangeRedisCache(options =>
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
+ThreadPool.SetMaxThreads(workerThreads: 100000, completionPortThreads: 100000);
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

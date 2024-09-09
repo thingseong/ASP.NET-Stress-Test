@@ -57,13 +57,13 @@ public class TcpSocketServer
                     
                     // for(int i = 0; i < 100000000; i++){}
                     
-                    RunTasks(2, 100000000);
+                    RunTasks(6, 100000000);
                     
                     var response = Encoding.ASCII.GetBytes("Echo : " + request + '\n');
                     var cacheReponse ="Cached Echo : " + request +'\n';
                     
                     // _cache[request] = cacheReponse;
-                    // await _cache.SetStringAsync(request, cacheReponse);
+                    await _cache.SetStringAsync(request, cacheReponse);
                     await networkStream.WriteAsync(response, 0, response.Length);
                 }
 
