@@ -11,7 +11,8 @@ Console.WriteLine("Starting server...");
 
 string host = Dns.GetHostName();
 IPHostEntry ipHostEntry = Dns.GetHostEntry(host);
-IPAddress ipAddress = ipHostEntry.AddressList[0];
+// IPAddress ipAddress = ipHostEntry.AddressList[0];
+IPAddress ipAddress = IPAddress.Any;
 IPEndPoint endPoint = new IPEndPoint(ipAddress, 7777);
 // 1. 주소 받아옴
 

@@ -46,3 +46,7 @@ C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyCli.C46919B7.Up2Date
+C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.dll
+C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
+C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
+C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyCli.C46919B7.Up2Date

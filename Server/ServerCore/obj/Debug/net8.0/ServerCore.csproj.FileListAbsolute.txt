@@ -12,9 +12,7 @@ C:\Users\SSAFY\RiderProjects\Server\ServerCore\obj\Debug\net8.0\refint\ServerCor
 C:\Users\SSAFY\RiderProjects\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
 C:\Users\SSAFY\RiderProjects\Server\ServerCore\obj\Debug\net8.0\ServerCore.genruntimeconfig.cache
 C:\Users\SSAFY\RiderProjects\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
-C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.exe
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
-C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.runtimeconfig.json
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.pdb
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\ServerCore.GeneratedMSBuildEditorConfig.editorconfig
@@ -25,7 +23,6 @@ C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\ServerCore.dll
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\refint\ServerCore.dll
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\ServerCore.pdb
-C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\ServerCore.genruntimeconfig.cache
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\ServerCore\obj\Debug\net8.0\ref\ServerCore.dll
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.deps.json
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\ServerCore\bin\Debug\net8.0\ServerCore.dll
