@@ -572,5 +572,13 @@
         "runtimeIdentifierGraphPath": "C:\\Users\\SSAFY\\.dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\SSAFY\\Desktop\\Git\\ASP.NET-Stress-Test\\MyGameServer\\MyGameServer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
