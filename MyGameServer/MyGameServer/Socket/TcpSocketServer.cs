@@ -43,7 +43,7 @@ public class TcpSocketServer
             while ((bytesRead = await networkStream.ReadAsync(buffer, 0, buffer.Length)) != 0)
             {
                 var request = Encoding.ASCII.GetString(buffer, 0, bytesRead).Trim();
-                Console.WriteLine($"Received {request}");
+                // Console.WriteLine($"Received {request}");
 
                 var cachedResponse = await _cache.GetStringAsync(request);
                 
@@ -55,13 +55,15 @@ public class TcpSocketServer
                 }
                 else{
                     
-                    for(int i = 0; i < 100000000; i++){}
+                    // for(int i = 0; i < 100000000; i++){}
+                    
+                    RunTasks(2, 100000000);
                     
                     var response = Encoding.ASCII.GetBytes("Echo : " + request + '\n');
                     var cacheReponse ="Cached Echo : " + request +'\n';
                     
                     // _cache[request] = cacheReponse;
-                    await _cache.SetStringAsync(request, cacheReponse);
+                    // await _cache.SetStringAsync(request, cacheReponse);
                     await networkStream.WriteAsync(response, 0, response.Length);
                 }
 
@@ -71,6 +73,35 @@ public class TcpSocketServer
         client.Close();
         Console.WriteLine($"Client disconnected");
         
+    }
+
+    void RunTasks( int cnt = 1, int mount = 100000000)
+    {
+        // 작업량을 cnt개의 구간으로 나눔
+        int chunkSize = mount / cnt;
+        List<Task> tasks = new List<Task>();
+
+        for (int i = 0; i < cnt; i++)
+        {
+            int start = i * chunkSize; // 시작 지점
+            int end = (i == cnt - 1) ? mount : start + chunkSize; // 마지막 작업은 mount까지
+
+            // 각 구간을 Task로 실행
+            // Console.WriteLine($"Starting chunk {start}/{end}");
+            Task task = Task.Run(() =>
+            {
+                for (int j = start; j < end; j++)
+                {
+                    // 작업 수행
+                }
+                // Console.WriteLine($"Task {t} is finished");
+            });
+
+            tasks.Add(task);
+        }
+
+        // 모든 작업이 완료될 때까지 대기
+        Task.WaitAll(tasks.ToArray());
     }
     
     

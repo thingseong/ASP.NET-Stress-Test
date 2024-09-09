@@ -32,16 +32,21 @@ C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\DummyClient.runtimeconfig.json
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\DummyClient.dll
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\DummyClient.pdb
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.AssemblyInfoInputs.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.AssemblyInfo.cs
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.CoreCompileInputs.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.sourcelink.json
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyCli.C46919B7.Up2Date
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.dll
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\refint\DummyClient.dll
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.pdb
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.genruntimeconfig.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\ref\DummyClient.dll
+<<<<<<< HEAD
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.dll
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
@@ -50,3 +55,5 @@ C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\bin\Debug\net8.0\ServerCore.pdb
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyClient.csproj.AssemblyReference.cache
 C:\Users\audtj\OneDrive\바탕 화면\Git\ASP.NET-Stress-Test\Server\DummyClient\obj\Debug\net8.0\DummyCli.C46919B7.Up2Date
+=======
+>>>>>>> 046717fc1392f555e2ff1c221d20be5556995f23

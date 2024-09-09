@@ -74,3 +74,14 @@ C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\obj\Deb
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\obj\Debug\net8.0\MyGameServer.genruntimeconfig.cache
 C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\obj\Debug\net8.0\ref\MyGameServer.dll
 >>>>>>> 16cf87cce3beb11b50a8d93cb95bea7d01be3755
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\StackExchange.Redis.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\obj\Debug\net8.0\MyGameServer.csproj.AssemblyReference.cache
+C:\Users\SSAFY\Desktop\Git\ASP.NET-Stress-Test\MyGameServer\MyGameServer\obj\Debug\net8.0\MyGameSe.1A5C5A32.Up2Date
